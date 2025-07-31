@@ -2,16 +2,23 @@ def calcular_mcd(n):
     print("asdf")
 
 def cadena_repetida_n(p = "", v = 0):
+
     p = input("Ingrese la palabra: ")
-    v = int(input("Ingrese las veces: "))
-    for i in range(v):
-        print(p)
-    print("------------------------------------------")
-    if v >= 0:
+    s = False
+    while s == False:
+        v = int(input("Ingrese las veces: "))
+        if v >= 0:
+            s = True
+        else:
+            print("Numero invalido")
+    #for i in range(v):
+    #    print(p)
+    #print("------------------------------------------")
+    if v <= 0:
         return 1
     else:
         cadena_repetida_n(v - 1)
-        print(cadena_repetida_n(p))
+        print(cadena_repetida_n(p, v))
 
 def contar_letra(n):
     print("asdf")
