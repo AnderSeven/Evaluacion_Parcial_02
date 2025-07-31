@@ -1,10 +1,13 @@
 def calcular_mcd(n):
     print("asdf")
 
-def cadena_repetida_n(p = " ", v = 0):
+def cadena_repetida_n(p = "", v = 0):
     p = input("Ingrese la palabra: ")
     v = int(input("Ingrese las veces: "))
-    if v <= 0:
+    for i in range(v):
+        print(p)
+    print("------------------------------------------")
+    if v >= 0:
         return 1
     else:
         cadena_repetida_n(v - 1)
