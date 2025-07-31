@@ -1,3 +1,24 @@
+def calcular_mcd(n):
+    print("asdf")
+
+def cadena_repetida_n(p = " ", v = 0):
+    p = input("Ingrese la palabra: ")
+    v = int(input("Ingrese las veces: "))
+    if v <= 0:
+        return 1
+    else:
+        cadena_repetida_n(v - 1)
+        print(cadena_repetida_n(p))
+
+def contar_letra(n):
+    print("asdf")
+
+def convertir_numero_binario(n):
+    print("asdf")
+
+def digitos_numero(n):
+    print("asdf")
+
 opciones = 0
 a = False
 while a == False:
@@ -11,10 +32,15 @@ while a == False:
     opciones = int(input("Elija una opcion: "))
     match opciones:
         case 1:
+            calcular_mcd()
         case 2:
+            cadena_repetida_n()
         case 3:
+            contar_letra()
         case 4:
+            convertir_numero_binario()
         case 5:
+            digitos_numero()
         case 6:
             print("Gracias por usar el sistema")
             a = True
